@@ -1,12 +1,4 @@
 GIT
-  remote: git://github.com/capistrano/rvm.git
-  revision: 9cfef39cf0022839dca6b5b330dfefeb5fc363e7
-  specs:
-    capistrano-rvm (0.1.2)
-      capistrano (~> 3.0)
-      sshkit (~> 1.2)
-
-GIT
   remote: git://github.com/thoughtbot/paperclip.git
   revision: 82cd3781b4bbfe20778fe5f9a6802d348cd5ee1a
   specs:
@@ -18,8 +10,16 @@ GIT
       mimemagic (~> 0.3.0)
 
 GIT
-  remote: git://github.com/zpaulovics/datetimepicker-rails.git
-  revision: 36d21cec5da7f5b214925804f60e63c61c747023
+  remote: https://github.com/capistrano/rvm.git
+  revision: 9cfef39cf0022839dca6b5b330dfefeb5fc363e7
+  specs:
+    capistrano-rvm (0.1.2)
+      capistrano (~> 3.0)
+      sshkit (~> 1.2)
+
+GIT
+  remote: https://github.com/zpaulovics/datetimepicker-rails.git
+  revision: 7a4640cb932e55866500a86c4f78808a4fca46e6
   branch: master
   submodules: true
   specs:
@@ -162,7 +162,9 @@ GEM
     mime-types (3.1)
       mime-types-data (~> 3.2015)
     mime-types-data (3.2016.0521)
-    mimemagic (0.3.2)
+    mimemagic (0.3.10)
+      nokogiri (~> 1)
+      rake
     mini_portile2 (2.3.0)
     minitest (5.10.3)
     momentjs-rails (2.17.1)
@@ -256,7 +258,7 @@ GEM
     turbolinks (5.0.1)
       turbolinks-source (~> 5)
     turbolinks-source (5.0.3)
-    tzinfo (1.2.3)
+    tzinfo (1.2.10)
       thread_safe (~> 0.1)
     tzinfo-data (1.2017.2)
       tzinfo (>= 1.0.0)
